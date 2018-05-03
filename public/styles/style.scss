@@ -1,0 +1,1043 @@
+$path--rel      : "../images/";
+
+@mixin background-image($img) {
+    background-image: url('#{$path--rel}/#{$img}');
+    background-repeat: no-repeat;
+} 
+
+body {
+     font-family: "Open Sans";
+     font-weight: 400;
+}
+img {
+    width: auto;
+    max-width: 100%;
+}
+ ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.navbar {
+    margin-bottom: 0;
+    
+}
+.navbar-white .navbar-brand {
+    height: auto;
+    padding: 12px 15px;
+    margin-top: 32px;
+}
+.main-nav {
+    text-transform: uppercase;
+}
+.navbar-brand {
+    display: block;
+    float: none;
+}
+.navbar .main-nav .nav li {
+    padding: 0 15px;
+}
+.navbar .main-nav .nav li a {
+    color: #fff;
+    font-size: 14px;
+    padding: 52px 0 10px;
+    margin: 0px;
+    position: relative;
+    font-weight: 400;
+}
+.navbar .main-nav .nav li a:before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    border: 0.84px solid #fff;
+    border-radius: 50%;
+    margin-right: 6px
+}
+
+.navbar .main-nav .nav li a:after {
+    content: "";
+    width: 1px;
+    display: inline-block;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    bottom: 18px;
+    display: none;
+    background: #fff;
+}
+.navbar .main-nav .nav li a:hover, .navbar .main-nav .nav li.active a, .navbar .main-nav .nav li a:focus {
+    color: #fff;
+    background: transparent;
+}
+.navbar .main-nav .nav li.active a:before, .navbar .main-nav .nav li a:hover:before, .navbar .main-nav .nav li a:focus:before {
+    background-color:#fff;
+    border-color: #fff;
+}
+.navbar .main-nav .nav li.active a:after, .navbar .main-nav .nav li a:hover:after, .navbar .main-nav .nav li a:focus:after { 
+    display: block;
+}
+  /*mobile icon*/
+
+.darkHeader {   
+    
+    background-color: #184A88;
+}
+.banner {
+  position: relative;
+}
+ 
+ /*video section*/
+.video-section .content-wrapper {
+    height: 400px;
+
+    padding: 60px 70px 60px 50px; 
+    background-size: cover;
+    @include background-image("banner-bg.jpg"); 
+}
+.video-wrapper {
+    padding: 0;
+    transform: translate(-10%, -13% );
+    height: 400px;
+    overflow: hidden;
+}
+.content-wrapper p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+}
+.content-wrapper li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+.content-wrapper .fa-play {
+    font-size: 28px;
+    color: #fff;
+    padding: 20px 20px 20px 24px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 20px; 
+}
+.content-wrapper li p {
+    font-weight: 22px;
+    line-height: 23px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+.content-wrapper li p span {
+    font-weight: 18px;
+    color: #fff;
+    font-weight: 400;
+    display: block;
+}
+.video-section {
+    transform: translateY(-25%);
+}
+.video-section .row {
+    padding-left: 30px;
+}
+
+
+
+
+
+.heading {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.heading h3{
+    font-weight: 600;
+    font-size: 80px;
+}
+.heading p{
+    font-size: 20px;
+}
+
+.navbar-toggle .icon-bar{
+        background-color:#fff;
+        clear: both;
+        width: 30px;
+        display: block;
+        height: 3px;
+        border-radius: 1px;
+        margin-top: 4px;
+}
+.navbar-toggle {
+    margin: 0;
+}
+.hvr-sweep-to-right {
+    text-transform: uppercase;
+    border: 0;
+    font-weight: 600;
+    margin: 36px 0 0 0;
+    padding: 15px 19px;
+    background: #fff;
+    color: #2c4058;
+}
+.what-we-do {
+    margin-bottom: 84px;
+}
+.what-we-do h1 {
+    
+    color: #184A88;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+}
+.frame {
+    padding: 35px 27px;
+    border: 1px solid rgba(44,64,88,0.1);
+    background-color: #FFFFFF;
+}
+.group {
+    margin-bottom: 41px;
+    text-align: center;
+}
+.dyanamic-web-solutions h4 {
+    color: #4A4A4A;
+    font-size: 16px;
+    text-align: center;
+}
+.at-spineor-we-explore-learn-an {
+    margin-top: 33px;
+    min-height: 85px;
+  
+}
+.at-spineor-we-explore-learn-an p {
+    line-height: 2;
+    color: #4A4A4A;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+.view-more{
+    margin-top: 33px;
+    text-align: center;
+}
+.view-more a {
+    font-weight: 600;
+    
+      font-size: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 54%;
+}
+
+/*<!-- WHAT WE DO SECTION --> <!-- WHAT WE DO SECTION --> <!-- WHAT WE DO SECTION -->*/
+.what-we-do h1:before{
+    content:"";
+    display: block;
+    height: 1px;
+    width: 100px;
+    background-color: #184A88;
+    margin:auto;
+    margin-bottom: 30px;
+}
+.frame:hover{
+    cursor: pointer;
+box-shadow: 0 -1px 35px 13px rgba(7,7,7,0.07);
+}
+.frame:hover .view-more a {
+    cursor: pointer;
+    color: white;
+    background-color: #184A88;
+}
+
+/*<!-- agile development section --> <!-- agile development section -->*/
+.agile-development {
+    margin-bottom: 84px;
+}
+.agile-development h1 {
+    
+    color: #184A88;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 0 10px;
+}
+.agile-development h1:before{
+    content:"";
+    display: block;
+    height: 1px;
+    width: 100px;
+    background-color: #184A88;
+    margin:auto;
+    margin-bottom: 30px;
+}
+.agile-development-image{
+    position: relative;
+    display: inline-block;
+}
+.agile-development-image:after{
+    top: -23px;
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid;
+    width: 100%;
+    bottom: 23px;
+    left: -23px;
+    z-index: 1;
+    border-color: #184A88;
+}
+.agile-image{
+    position: relative;
+    z-index: 9;
+}
+.we-use-agile-method span {
+    color: #4A4A4A;
+    font-size: 20px;
+    font-weight: 500;
+}
+.we-use-agile-method h6 {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 5px 0 15px 0;
+}
+.increasing-prosperity-in-our-l {
+    font-size: 18px;
+    line-height: 30px;
+}
+.agile-proposi ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0;
+    position: relative;
+}
+.agile-proposi ul:first-child li {
+    width: 50%;
+}
+.agile-proposi ul:first-child {
+    margin-bottom: 40px;
+}
+.agile-proposi li {
+    display: inline-block;
+    position: relative;
+}
+.agile-proposi h6{
+color: #4A4A4A;
+font-size: 17px;
+margin-top: 0;
+}
+.increasing-prosperity-in-our-l {
+    margin-bottom: 37px;
+}
+.agile-proposi span{
+    font-size: 16px;
+     position: absolute;
+     left: 0;
+     top: 0;
+}
+.agile-proposi {
+    position: relative;
+}
+
+/*<!-- what we can do for you section --><!-- what we can do for you section -->*/
+.what-we-can-do-for-you {
+    margin-bottom: 84px;
+}
+.what-we-can-do-for-you h1 {
+    margin: 70px 0 10px;
+    color: #184A88;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+}
+.what-we-can-do-for-you h1:before{
+    content:"";
+    display: block;
+    height: 1px;
+    width: 100px;
+    background-color: #184A88;
+    margin:auto;
+    margin-bottom: 30px;
+}
+.Web-Development span{
+    margin-right: 15px;
+    display: inline-block;
+}
+.Our-developers-build-not p{
+    font-weight: 600;
+    color: #4A4A4A;
+    font-size: 12px;
+    line-height: 2;     
+}
+.Web-Development-heading{
+border: 1px solid rgba(44,64,88,0.1);
+padding: 30px;  
+min-height: 266px;
+}
+.Web-Development {
+    margin-bottom: 14px;
+}
+.remove{
+    padding: 0;
+}
+.Web-Development-heading:hover{
+cursor: pointer;
+box-shadow: 0 0 27px 18px rgba(0,0,0,0.07);
+}
+
+/*OUR-WORK*//*OUR-WORK*//*OUR-WORK*/
+.OUR-WORK {
+    margin-bottom: 84px;
+}
+.OUR-WORK h1 {
+    margin: 70px 0 10px;
+    color: #184A88;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+}
+.OUR-WORK h1:before{
+    content:"";
+    display: block;
+    height: 1px;
+    width: 100px;
+    background-color: #184A88;
+    margin:auto;
+    margin-bottom: 30px;
+}
+.industries-we-cater h4{
+font-size: 30px;
+font-weight: 600;
+line-height: 22px;
+
+}
+.our-work-list-content a{
+text-decoration: none;
+height: 20px;
+width: 103px;
+color: #5591CE;
+font-size: 17px;
+font-weight: 600;
+line-height: 22px;
+}
+.our-work-list-content{
+    padding: 0;
+    list-style-type: none;
+}
+.our-work-list {
+    margin-top: 45px;
+}
+.our-work-list-content li{
+    padding-bottom: 20px;
+}
+.view-project{
+    margin-top: 40px;
+}
+a.frame2 {
+    line-height: 2;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 35%;
+}
+.view-project i{
+    float: right;
+    font-size: 20px;
+}
+.see-all-project {
+    margin-top: 40px;
+}
+.see-all-project a{
+    font-size: 10px;
+    text-decoration: none;
+    color: #5591CE; 
+
+}
+.OUR-WORK-image{
+    position: relative;
+}
+.work-image{
+    position: relative;
+    z-index: 9;
+}
+.project-Logo {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    left: -90px;
+}
+/*<!-- our process -->  <!-- our process -->  <!-- our process -->  */
+.our-process {
+    margin-bottom: 84px;
+}
+.our-process h1 {
+    margin: 70px 0 10px;
+    color: #184A88;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+}
+.our-process h1:before{
+    content:"";
+    display: block;
+    height: 1px;
+    width: 100px;
+    background-color: #184A88;
+    margin:auto;
+    margin-bottom: 30px;
+}
+.consulting h4{
+text-align: center;
+opacity: 0.13;
+color: #184A88; 
+font-size: 80px;
+font-weight: bold;
+}
+.our-process-image {
+ text-align: center;
+}
+.consulting h6{
+text-align: center;
+color: #4A4A4A;
+font-size: 18px;
+font-weight:600;
+}
+.consulting p{
+color: #4A4A4A;
+font-size: 14px;
+text-align: center;
+
+}
+
+/*<!-- GET IN TOUCH SECTION --> <!-- GET IN TOUCH SECTION --> */
+.get-in-touch {
+    margin-bottom: 84px;
+}
+.get-in-touch h1 {
+    margin: 0px 0 10px;
+    color: #184A88;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+}
+.get-in-touch h1:before{
+    content:"";
+    display: block;
+    height: 1px;
+    width: 100px;
+    background-color: #184A88;
+    margin:auto;
+    margin-bottom: 30px;
+}
+.form-control {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #919191;
+    height: auto;
+    padding: 10px 0px;
+    font-size: 16px;
+     box-shadow: none;
+     resize: none; 
+}
+.form-control:focus{
+    color: #184A88;
+    border-bottom-color: #184d8f;
+    box-shadow: none;
+}
+.form-control:focus::placeholder { 
+    color:  #184A88;
+}
+.form-control:focus:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #184A88;
+}
+
+.form-control:focus::-ms-input-placeholder { /* Microsoft Edge */
+    color: #184A88;
+}
+.submit-btn {
+    height: 50px;
+    padding: 14px 31px;
+    text-transform: uppercase;
+    width: 100%;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+    background: #184a88;
+}
+.submit-btn:hover {
+    color: #fff;
+}
+.map iframe {
+    width: 100%;
+    min-height: 369px;
+}
+.get-in-section form {
+    padding-right: 25px;
+}
+.inner-row {
+    width: 100%;
+    display: inline-block;
+    margin-top: 33px;
+    padding: 30px 0 0 0;
+    border-top: 1px solid rgba(145, 145, 145, 0.30); 
+}
+.inner-row li {
+    width: 25%;
+    float: left;
+}
+
+.location p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+    display: inline-block;
+}
+.send-msg {
+    text-align: center;
+}
+.get-in-section{
+    box-shadow: 0 0 27px 18px rgba(0,0,0,0.04);
+    padding: 35px 25px;
+}
+
+.location p span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4a4a4a;
+    display: block;
+    margin: 0 0 9px 0;
+}
+.get-in-section:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#in-img {
+    margin-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+
+
+/*<!-- WHAT OUR CLIENTS SAY --> <!-- WHAT OUR CLIENTS SAY -->*/
+.what-our-client h1 {
+    
+    color: #184A88;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    margin: 70px 0 75px;
+}
+.what-our-client h1:before{
+    content:"";
+    display: block;
+    height: 1px;
+    width: 100px;
+    background-color: #184A88;
+    margin:auto;
+    margin-bottom: 30px;
+}
+
+/*Technologies*/
+.tecol-carousel img {
+    margin: auto;
+}
+.technologies {
+    padding: 40px 0;
+    background: #e3e9f1;
+}
+    
+.simply-scroll-list li {
+    padding: 0 15px!important;
+}
+ 
+.technologies .simply-scroll {
+    margin-bottom: 0;
+}
+.slick-prev, .slick-next {
+    background: #184a88;
+    border-radius: 50%;
+    height:30px;
+    width: 30px;
+    opacity: 0.7;   
+    box-shadow: 3px 0 13px #333; 
+}
+.slick-next {
+    right: 0; 
+}
+.slick-prev {
+    left: 0; 
+}
+
+.slick-prev:hover, .slick-next:hover{
+    opacity: 1;
+}
+
+
+/*Technologies*/
+
+/*<!-- Lets's Get Started --> <!-- Lets's Get Started -->*/
+.lets-get h4{
+    margin-bottom: 30px;
+    color: #184A88;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 70px 0 30px;
+}
+.lets-get p {
+    color: #4A4A4A;
+    font-size: 14px;
+    line-height: 35px; 
+}
+.get-a-free {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #184A88;
+    color: white;
+    display: inline-block;
+    padding: 14px 31px;
+    margin: 55px 0 90px;
+}
+.get-a-free:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*<!-- WHAT OUR CLIENTS SAY --> <!-- WHAT OUR CLIENTS SAY -->*/
+
+.testimonials-section {
+    background-repeat: no-repeat;
+    @include background-image("testimonials_bg.png");
+    position: relative;
+    background-position: 0 151px;
+    padding-bottom: 55px;
+}
+.slick-slide {
+    margin: 30px 27px;
+}
+.item {
+    width: 100%;
+    display: inline-block;
+    padding: 32px;
+    background: #fff;
+    box-shadow: 8px 6px 48px rgba(0,0,0,0.16);
+}
+.item p{
+    color: #4A4A4A;
+    font-size: 14px;
+    line-height: 24px;
+}
+.img-slide {
+    width: 65px;
+    height: 64px;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 50%;
+}
+.item li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.item h3 {
+    padding-left: 12px;
+    color: #184A88;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0 0 3px 0;
+}
+
+.item li p{
+    padding-left: 12px;
+    color: #184A88;
+    font-size: 14px;
+    line-height: 22px;
+}
+.item li p span {
+    font-weight: bold;  
+}
+.slider-images {
+    position: absolute;
+    top: 25%;
+}
+
+
+
+
+
+
+
+
+
+/*FOOTER CSS*/ /*FOOTER CSS*/ /*FOOTER CSS*/ /*FOOTER CSS*/
+.foo-image{
+
+@include background-image("footer_img.png");
+height: auto;
+}
+.foo-image .product-detail {
+    color: white;
+}
+.foo-image .product-list a {
+    text-decoration: none;
+    color: white;
+}
+.product-detail .product-list ul {
+    padding: 0;
+    list-style-type: none;
+}
+.foo-image .product-detail h4{
+    line-height: 4;
+    font-size: 15px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+
+}
+.product-detail .product-list li{
+    line-height: 2.3;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+ 
+}
+.product-detail .product-list i{
+    padding: 3px;
+    font-size: 18px;
+    opacity: 0.6;
+}
+.foo-image .foot-info{
+    position: relative;
+    margin-top: 34px;
+    color: white;
+}
+.foo-image .foot-info p#cpy{
+    text-align: center;
+    font-size: 10px;
+}
+.foo-image .foot-info span{
+
+    padding: 3px;
+}
+.foo-image .foot-info p#cpy1{
+    text-align: center;
+}
+footer {
+    margin-top: 70px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .frame {
+        width: auto;
+        height: auto;
+    }
+    .at-spineor-we-explore-learn-an p {
+        width: auto;
+    }
+    .Web-Development-heading {
+        min-height: 310px;
+    }
+    .we-use-agile-method h6 {
+        font-size: 25px;
+    }
+    .navbar .main-nav .nav li {
+        padding: 0 8px;
+    }
+    .hvr-sweep-to-right {
+
+        margin: 41px 0 0 0;
+        padding: 11px 9px;
+    }
+}
+@media screen and (max-width: 992px) {
+    a.frame1 {
+        width: 100%;
+    }
+    .frame {
+        padding: 35px 15px;
+    } 
+    .dyanamic-web-solutions h4 {
+        min-height: 34px;
+    }
+    .at-spineor-we-explore-learn-an {
+        min-height: 113px;
+    }
+    .Web-Development-heading {
+        min-height: 268px;
+    }
+    .navbar .main-nav .nav li a {
+        font-size: 11px; 
+    }
+    .inner-row li {
+        width: 50%;
+        min-height: 104px;
+    }
+    .navbar .main-nav .nav li {
+        padding: 0 5px;
+    }
+    .navbar-white .navbar-brand {
+        width: 130px;
+    }
+    .hvr-sweep-to-right {
+        padding: 9px 6px;
+        font-size: 12px;
+    }
+    .content-wrapper li {
+        margin-top: 20px;
+    }
+    .content-wrapper .fa-play {
+        font-size: 18px;
+        padding: 15px 15px 15px 19px;
+    }
+    .video-section .content-wrapper {
+        height: auto;
+        padding: 30px 70px 30px 34px;
+    }
+    .video-wrapper {
+        height: auto;
+    }
+    .content-wrapper p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .project-Logo {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .at-spineor-we-explore-learn-an, .Web-Development-heading {
+        min-height: auto;
+        margin-top: 0;
+    }
+    .agile-development h1, .what-we-can-do-for-you h1, .OUR-WORK h1, .our-process h1, .what-our-client h1, .get-in-touch h1 {
+        font-size: 24px;
+        margin: 35px 0 10px;
+    }
+    a.frame1 {
+        width: 130px;
+    }
+    .agile-development h1:before, .what-we-can-do-for-you h1:before, .OUR-WORK h1:before, .our-process h1:before, .what-our-client h1:before, .get-in-touch h1:before {
+        margin-bottom: 15px;
+    }
+    .col-sm-7.agile-wrapper {
+        padding: 0 30px;
+        text-align: center;
+    }
+    .we-use-wrapper {
+        padding: 30px;
+    }
+    .agile-proposi {
+        text-align: center;
+    }
+    .agile-proposi span {
+        text-align: left;
+    }
+    .what-we-can-do-for-you, .agile-development, .consulting {
+        margin-bottom: 35px;
+    }
+    .w-c-section {
+        padding: 0 15px;
+    }
+    .we-use-agile-method span, .increasing-prosperity-in-our-l {
+        font-size: 14px;
+        line-height: 22px;
+    } 
+    .we-use-agile-method h6 {
+        font-size: 20px;
+    }
+    .agile-proposi h6 {
+        font-size: 15px;
+    }
+    .agile-proposi span {
+      font-size: 12px;
+    } 
+    .Web-Development span {
+        display: block;
+    }
+    .Web-Development-heading {
+        text-align: center;
+    }
+    .navbar-white .navbar-brand {
+        margin-top: 0;
+    }
+    .banner {
+        min-height: 150px;
+    }
+    .heading h3{
+        font-size: 25px;
+    }
+    .heading p{
+        font-size: 10px;
+    }
+    .navbar .main-nav .nav li a {
+       font-size: 13px;
+       padding: 14px 0 10px;
+       
+    }
+    .navbar .main-nav .nav li.active a:after, .navbar .main-nav .nav li a:hover:after, .navbar .main-nav .nav li a:focus:after {
+       display: none;
+    }
+    .OUR-WORK, .our-process, .get-in-touch {
+        margin-bottom: 25px;
+    }
+    .our-work-list, .view-project, .see-all-project, .lets-get h4, .video-wrapper {
+        margin-top: 20px;
+    }
+    .industries-we-cater h4 {
+        font-size: 20px;
+    }
+    a.frame2 {
+        width: auto;
+    }
+    .view-project i {
+        margin-left: 16px;
+    }
+    .get-in-section form {
+        padding-right: 0;
+    }
+    .get-in-section {
+        padding: 5px 3px;
+    }
+    .frame, .remove {
+        margin-bottom: 15px;
+    }
+    .video-section, .video-wrapper {
+        transform: translateY(0%);
+    }
+    .video-section .row {
+        padding: 0 15px;
+    }
+    .video-section .content-wrapper, .item {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .inner-row li {
+        width: 100%;
+    }
+    .item {
+        text-align: center;
+    }
+    .testimonials-section {
+        background: transparent;
+    }
+}
+
