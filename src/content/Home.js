@@ -6,6 +6,9 @@ import { Heading } from 'app/components/UI';
 import { Row, Col, Carousel } from 'antd';
 import SEO from 'app/components/SEO';
 
+import $ from "jquery";
+window.$ = window.jQuery=$;
+
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 
@@ -21,10 +24,13 @@ const videoSources = {
 	BigDataText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 	DataAnalysis: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
 	DataAnalysisPoster: 'images/Untitled-1.png',
+	DataAnalysisText: 'Data Analysis Text Lorem ipsum dolor sit amet',
 	DigitalMarketing: 'http://media.w3.org/2010/05/bunny/movie.mp4',
 	DigitalMarketingPoster: 'images/Untitled-1.png',
+	DigitalMarketingText: 'Digital Marketing Lorem ipsum dolor sit amet',
 	MachineLearning: 'http://media.w3.org/2010/05/video/movie_300.webm',
 	MachineLearningPoster: 'images/Untitled-1.png',
+	MachineLearningText: 'Machine Learning Lorem ipsum dolor sit amet'
 };
 
 export default class Home extends React.Component {
@@ -42,6 +48,8 @@ export default class Home extends React.Component {
 		    videoDescriptionSources: videoSources['BigDataText']
         }
         this.play = this.play.bind(this);
+        this.load = this.load.bind(this);
+        this.updateSliderVideo = this.updateSliderVideo.bind(this);
     }
 
     componentDidMount() {
@@ -49,14 +57,30 @@ export default class Home extends React.Component {
 	    this.refs.player.subscribeToStateChange(this.handleStateChange.bind(this));
 	}
 
+	updateSliderVideo(){
+		let val = $('div.current div.inner').data('id');
+		let posterVeriable = val + 'Poster';
+     	let videoDescriptionVeriable = val + 'Text';
+    	this.setState({
+      		videoSource: videoSources[val],
+		    posterSource: videoSources[posterVeriable],
+		    videoDescriptionSources: videoSources[videoDescriptionVeriable]
+    	});
+     	this.refs.player.subscribeToStateChange(this.handleStateChange.bind(this));
+     	this.refs.player.load();
+	}
+
+
 	handleStateChange(state, prevState) {
 	    this.setState({
 	      player: state
 	    });
 	  }
-
 	  play() {
 	    this.refs.player.play();
+	  }
+	  load(){
+	  	this.refs.player.load();
 	  }
 
 render() {
@@ -65,21 +89,25 @@ render() {
 	
 	const content = [
 		{
+			id: 'BigData',
 			title: 'Big Data',
 			description:'how data analysis increase your sales?',
 			image: 'http://dev.spineor.com/remote-images/banner1.jpg',
 		},
 		{
+			id: 'DataAnalysis',
 			title: 'Data Analysis',
 			description:'',
 			image: 'http://dev.spineor.com/remote-images/banner2.jpg',
 		},
 		{
+			id: 'DigitalMarketing',
 			title: 'Digital Marketing',
 			description:'',		
 			image: 'http://dev.spineor.com/remote-images/banner3.jpg',
 		},
 		{
+			id: 'MachineLearning',
 			title: 'Machine Learning',
 			description:'',
 			image: 'http://dev.spineor.com/remote-images/banner4.jpg',
@@ -91,15 +119,15 @@ render() {
 
 				<Heading title="Hey You" />
 							
-				<Slider className="slider-wrapper">
+				<Slider className="slider-wrapper" onSlideChange={this.updateSliderVideo} >
 					{content.map((item, index) => (
 						<div
 							key={index}
 							className="slider-content"
 							style={{ background: `url('${item.image}') no-repeat center center` }}
 						>
-							<div className="inner">
-								<h1>{item.title}</h1>
+							<div className="inner" data-id={item.id}>
+								<h1 className="headingText">{item.title}</h1>
 								<p>{item.description}</p>
 							</div>
 						</div>
@@ -535,6 +563,7 @@ render() {
 								</div>
 								<div className="col-sm-6">
 									<div className="map">
+									{/*
 										<GoogleMapReact
 								          bootstrapURLKeys={{key:'AIzaSyCHk9ydWP42_dQOGTLbBRKy336La-RXNaY'}}
 								          defaultCenter={this.props.center}
@@ -542,6 +571,7 @@ render() {
 								        >
 								          
 								        </GoogleMapReact>
+								    */}
 									</div>
 								</div>
 								<div className="inner-wrapper">
