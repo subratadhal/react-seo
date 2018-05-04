@@ -48,8 +48,10 @@ const HTML = ( props ) => {
 				<meta name="description" content={ content.description } data-react-helmet="true" />
 				<meta name="keywords" content={ content.keywords } data-react-helmet="true" />
 				<link rel="icon" href="/images/favicon.ico" />
-				<link href="/styles.css" rel="stylesheet" />
 				<link href="/bootstrap.min.css" rel="stylesheet" />
+				<link href="/styles.css" rel="stylesheet" />
+				<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"/>
+				<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 			</head>
 			<body>
 				<div id='root'>

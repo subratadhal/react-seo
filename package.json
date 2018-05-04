@@ -46,5 +46,8 @@
     "url-loader": "^1.0.1",
     "webpack": "^2.4.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "google-map-react": "^1.0.0",
+    "react-animated-slider": "^1.1.1"
+  }
 }
