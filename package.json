@@ -48,6 +48,8 @@
   },
   "dependencies": {
     "google-map-react": "^1.0.0",
-    "react-animated-slider": "^1.1.1"
+    "react-animated-slider": "^1.1.1",
+    "redux": "^4.0.0",
+    "video-react": "^0.10.4"
   }
 }

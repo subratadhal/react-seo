@@ -8,8 +8,24 @@ import SEO from 'app/components/SEO';
 
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
+
+import { Player, ControlBar, BigPlayButton } from 'video-react';
+import 'video-react/dist/video-react.css';
+
 import GoogleMapReact from 'google-map-react';
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
+
+const videoSources = {
+	BigData: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
+	BigDataPoster: 'images/Untitled-1.png', 
+	BigDataText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	DataAnalysis: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
+	DataAnalysisPoster: 'images/Untitled-1.png',
+	DigitalMarketing: 'http://media.w3.org/2010/05/bunny/movie.mp4',
+	DigitalMarketingPoster: 'images/Untitled-1.png',
+	MachineLearning: 'http://media.w3.org/2010/05/video/movie_300.webm',
+	MachineLearningPoster: 'images/Untitled-1.png',
+};
 
 export default class Home extends React.Component {
 
@@ -20,11 +36,32 @@ export default class Home extends React.Component {
 		      lat: 59.95,
 		      lng: 30.33
 		    },
-		    zoom: 11
+		    zoom: 11,
+		    videoSource: videoSources['BigData'],
+		    posterSource: videoSources['BigDataPoster'],
+		    videoDescriptionSources: videoSources['BigDataText']
         }
+        this.play = this.play.bind(this);
     }
 
+    componentDidMount() {
+	    // subscribe state change
+	    this.refs.player.subscribeToStateChange(this.handleStateChange.bind(this));
+	}
+
+	handleStateChange(state, prevState) {
+	    this.setState({
+	      player: state
+	    });
+	  }
+
+	  play() {
+	    this.refs.player.play();
+	  }
+
 render() {
+
+	
 	
 	const content = [
 		{
@@ -53,15 +90,7 @@ render() {
 			<DefaultLayout>
 
 				<Heading title="Hey You" />
-							{/*
-										<section className="banner">
-											<img src="images/Homepage.jpg"/>
-											<div className="container heading">
-												<h3>BIG DATA</h3>
-												<p>HOW DATA ANALYSIS INCREASE YOUR SALES?</p>
-											</div>
-										</section>
-							*/}
+							
 				<Slider className="slider-wrapper">
 					{content.map((item, index) => (
 						<div
@@ -78,20 +107,29 @@ render() {
 				</Slider>
 
 
-
 				<section className="video-section">
 					<div className="container">
 						<div className="row">
 							<div className="content-wrapper col-sm-6">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+								<p>{this.state.videoDescriptionSources}</p>
 								<span></span>
 								<ul>
-									<li><i className="fa fa-play"></i></li>
+									<li onClick={this.play}><i className="fa fa-play"></i></li>
 									<li><p><span>watch</span>intro video</p></li>
+									
 								</ul>
 							</div>
 							<div className="video-wrapper col-sm-6">
-								<img src="images/project_Img.png"/>
+								<Player
+									ref="player"
+							        width="400"
+							        height="400"
+							        aspectRatio = "4:3"
+							        poster={this.state.posterSource}
+						        >
+						  	        <source src={this.state.videoSource} />
+							        <BigPlayButton position="center" />
+							    </Player>
 							</div>
 						</div>
 					</div>
