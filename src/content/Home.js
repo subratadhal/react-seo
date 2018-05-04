@@ -20,8 +20,7 @@ export default class Home extends React.Component {
 		      lat: 59.95,
 		      lng: 30.33
 		    },
-		    zoom: 11,
-		    key:'AIzaSyCHk9ydWP42_dQOGTLbBRKy336La-RXNaY'
+		    zoom: 11
         }
     }
 
@@ -499,7 +498,7 @@ render() {
 								<div className="col-sm-6">
 									<div className="map">
 										<GoogleMapReact
-								          bootstrapURLKeys={this.props.key}
+								          bootstrapURLKeys={{key:'AIzaSyCHk9ydWP42_dQOGTLbBRKy336La-RXNaY'}}
 								          defaultCenter={this.props.center}
 								          defaultZoom={this.props.zoom}
 								        >
