@@ -17,6 +17,8 @@ import 'video-react/dist/video-react.css';
 
 import GoogleMapReact from 'google-map-react';
 
+import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
+//import 'react-tabs/style/react-tabs.css';
 
 const videoSources = {
 	BigData: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
@@ -45,7 +47,8 @@ export default class Home extends React.Component {
 		    zoom: 11,
 		    videoSource: videoSources['BigData'],
 		    posterSource: videoSources['BigDataPoster'],
-		    videoDescriptionSources: videoSources['BigDataText']
+		    videoDescriptionSources: videoSources['BigDataText'],
+		    tabIndex: 0 //tab
         }
         this.play = this.play.bind(this);
         this.load = this.load.bind(this);
@@ -220,7 +223,9 @@ render() {
 						</div>
 					</div>
 				</section>
-				
+
+
+
 				<section>
 					<div className="container">
 						<div className="row">
@@ -332,41 +337,62 @@ render() {
 						</div>
 					</div>
 				</section>
-
+		
 				<section>
 					<div className="container">
 						<div className="row">
 							<div className="OUR-WORK">
 								<h1>OUR WORK</h1>
 							</div>
-							<div className="col-sm-6">
-								<div className="industries-we-cater">
-									<h4>Industries we cater</h4>
+							<Tabs selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
+								<div className="col-sm-6">
+									<div className="industries-we-cater">
+										<h4>Industries we cater</h4>
+									</div>
+									<TabList>
+										<Tab>Hospitality</Tab>
+										<Tab>Finance</Tab>
+										<Tab>Retail</Tab>
+										<Tab>Healthcare</Tab>
+							        </TabList>
+							        <div className="view-project">
+										<a className="frame2" href="#">VIEW MORE <i className="fa fa-long-arrow-right"></i></a>
+									</div>
+									<div className="see-all-project">
+										<a href="">SEE ALL PROJECT</a>
+									</div>
 								</div>
-								<div className="our-work-list">
-									<ul className="our-work-list-content">
-										<li><a href="">Hospitality</a></li>
-										<li><a href="">Finance</a></li>
-										<li><a href="">Retail</a></li>
-										<li><a href="">Healthcare</a></li>
-									</ul>
+								<div className="col-sm-6">
+							 		<TabPanel>
+								 		<div className="OUR-WORK-image">
+											 <img className="work-image" src="http://dev.spineor.com/remote-images/project1.jpg"/>
+											 <span className="project-Logo"><img src="http://dev.spineor.com/remote-images/project1logo.png"/></span>
+										</div>
+							 		</TabPanel>
+							        <TabPanel>
+							        	<div className="OUR-WORK-image">
+											 <img className="work-image" src="http://dev.spineor.com/remote-images/project2.jpg"/>
+											 <span className="project-Logo"><img src="http://dev.spineor.com/remote-images/project2logo.png"/></span>
+										</div>
+							        </TabPanel>
+							        <TabPanel>
+							        	<div className="OUR-WORK-image">
+											 <img className="work-image" src="http://dev.spineor.com/remote-images/project3.jpg"/>
+											 <span className="project-Logo"><img src="http://dev.spineor.com/remote-images/project3logo.png"/></span>
+										</div>
+							        </TabPanel>
+							        <TabPanel>
+							        	<div className="OUR-WORK-image">
+											 <img className="work-image" src="http://dev.spineor.com/remote-images/project4.jpg"/>
+											 <span className="project-Logo"><img src="http://dev.spineor.com/remote-images/project4logo.png"/></span>
+										</div>
+							        </TabPanel>
 								</div>
-								<div className="view-project">
-									<a className="frame2" href="#">VIEW MORE <i className="fa fa-long-arrow-right"></i></a>
-								</div>
-								<div className="see-all-project">
-									<a href="">SEE ALL PROJECT</a>
-								</div>
-							</div>
-							<div className="col-sm-6">
-								<div className="OUR-WORK-image">
-									 <img className="work-image" src="images/project_Img.png"/>
-									 <span className="project-Logo"><img src="images/project_Logo.png"/></span>
-								</div>
-							</div>
+							</Tabs>
 						</div>
 					</div>
-				</section>
+				</section>							
+
 
 				<section>
 					<div className="container">
