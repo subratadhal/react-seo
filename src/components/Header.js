@@ -3,6 +3,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+import $ from "jquery";
+window.$ = window.jQuery=$;
+
 export default class Header extends React.Component {
 	constructor(props) {
     super(props);
@@ -18,6 +21,20 @@ export default class Header extends React.Component {
 		    	this.setState({ header: '#184A88' });
 		    }
 	    });
+	    $('.dropdown-toggle').on('click',function(e){
+	    	e.stopPropagation();
+	    	if($(this).parent().hasClass('copen')){
+	    		$(this).parent().removeClass('copen');
+	    		$(this).parent().removeClass('cactive');
+	    	}else{
+	    		$('ul.nav > li.dropdown').removeClass('cactive').removeClass('copen');
+	    		$(this).parent().addClass('copen');
+	    		$(this).parent().addClass('cactive');
+	    	}
+	    });
+	    $("body").click(function(){
+		  $(".nav > li.dropdown").removeClass("copen").removeClass('cactive');
+		});
   	}
   render() {
   	const style = {
@@ -39,16 +56,34 @@ export default class Header extends React.Component {
 		          	<ul className="nav navbar-nav custom-nav">
 
 			            <li className="active"><Link to="/">Home</Link></li>
-			            <li><a>Who we are</a></li>
+			            <li  className="dropdown">
+			            	<a className="dropdown-toggle" >
+			            		Who we are
+			            		<span className="caret"></span>
+			            	</a>
+			            	<ul className="dropdown-container dropdown-list">
+			            		<li><Link to="/about">ABOUT US</Link></li>
+			            		<li><Link to="/our-process">OUR PROCESS</Link></li>
+			            		<li><Link to="/careers">CAREERS</Link></li>
+			            	</ul>
+			            </li>
 			            <li className="dropdown">
-			            	<a  className="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+			            	<a className="dropdown-toggle" >
 			            		Services
 			            		<span className="caret"></span>
-			            	</a>	                
+			            	</a>
+			            	<ul className="dropdown-container dropdown-list-big">
+			            		<li><Link to="/about">WEBSITE DEVELOPMENT</Link></li>
+			            		<li><Link to="/about">RESTFULL APIS</Link></li>
+			            		<li><Link to="/about">REACTIVE APPLICATIONS</Link></li>
+			            		<li><Link to="/about">FULL MEAN STACK DEVELOPMENT</Link></li>
+			            		<li><Link to="/about">THIRD PARTY INTEGRATIONS</Link></li>
+			            		<li><Link to="/about">MACHINE LEARNING</Link></li>
+			            	</ul>
 			            </li>
-			            <li><Link to="/casestudies" activeClassName="active">CASE STUDIES</Link></li>
-			            <li><Link to="/blog" activeClassName="active">BLOG</Link></li>
-			            <li><Link to="/contact-us" activeClassName="active">Contact Us</Link></li>
+			            <li><Link to="/casestudies" >CASE STUDIES</Link></li>
+			            <li><Link to="/blog">BLOG</Link></li>
+			            <li><Link to="/contact-us">Contact Us</Link></li>
 		       		</ul>
 		       		<button type="button" className="hvr-sweep-to-right">Free Quote</button>
 		        </div>

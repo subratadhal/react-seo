@@ -137,7 +137,6 @@ render() {
 					))}
 				</Slider>
 
-
 				<section className="video-section">
 					<div className="container">
 						<div className="row">
