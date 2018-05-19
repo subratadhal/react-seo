@@ -50,7 +50,7 @@ export default class Header extends React.Component {
 		            <span className="icon-bar"></span> 
 		            <span className="icon-bar"></span> 
 		          </button>
-		         <a className="navbar-brand" ><img src="images/logo.png" alt="logo"/></a>
+		         <a href="/" className="navbar-brand" ><img src="http://dev.spineor.com/remote-images/logo.png" alt="logo"/></a>
 		        </div>
 		        <div id="navbar" className="collapse navbar-collapse navbar-right main-nav">
 		          	<ul className="nav navbar-nav custom-nav">
@@ -62,9 +62,9 @@ export default class Header extends React.Component {
 			            		<span className="caret"></span>
 			            	</a>
 			            	<ul className="dropdown-container dropdown-list">
-			            		<li><Link to="/about">ABOUT US</Link></li>
-			            		<li><Link to="/our-process">OUR PROCESS</Link></li>
-			            		<li><Link to="/careers">CAREERS</Link></li>
+			            		<li><Link to="/who-we-are/about">ABOUT US</Link></li>
+			            		<li><Link to="/who-we-are/our-process">OUR PROCESS</Link></li>
+			            		<li><Link to="/who-we-are/careers">CAREERS</Link></li>
 			            	</ul>
 			            </li>
 			            <li className="dropdown">
@@ -73,12 +73,12 @@ export default class Header extends React.Component {
 			            		<span className="caret"></span>
 			            	</a>
 			            	<ul className="dropdown-container dropdown-list-big">
-			            		<li><Link to="/about">WEBSITE DEVELOPMENT</Link></li>
-			            		<li><Link to="/about">RESTFULL APIS</Link></li>
-			            		<li><Link to="/about">REACTIVE APPLICATIONS</Link></li>
-			            		<li><Link to="/about">FULL MEAN STACK DEVELOPMENT</Link></li>
-			            		<li><Link to="/about">THIRD PARTY INTEGRATIONS</Link></li>
-			            		<li><Link to="/about">MACHINE LEARNING</Link></li>
+			            		<li><Link to="/service/website-development">WEBSITE DEVELOPMENT</Link></li>
+			            		<li><Link to="/service/restfull-apis">RESTFULL APIS</Link></li>
+			            		<li><Link to="/service/reactive-applications">REACTIVE APPLICATIONS</Link></li>
+			            		<li><Link to="/service/full-mean-stack-development">FULL MEAN STACK DEVELOPMENT</Link></li>
+			            		<li><Link to="/service/third-party-integrations">THIRD PARTY INTEGRATIONS</Link></li>
+			            		<li><Link to="/service/machine-learning">MACHINE LEARNING</Link></li>
 			            	</ul>
 			            </li>
 			            <li><Link to="/casestudies" >CASE STUDIES</Link></li>

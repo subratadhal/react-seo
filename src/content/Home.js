@@ -172,7 +172,7 @@ render() {
 								<h1>WHAT WE DO</h1>
 							</div>
 							<div className="col-sm-4">
-								<div className="frame">
+								<a href="what-we-do/dynamic-web-solutions" className="frame">
 									<div className="group">
 										<img src="images/Untitled-1.png"/>
 									</div>
@@ -185,10 +185,10 @@ render() {
 									<div className="view-more">
 										<a className="frame1" href="#">VIEW MORE</a>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div className="col-sm-4">
-								<div className="frame">
+								<a href="what-we-do/data-analytics" className="frame">
 									<div className="group">
 										<img src="images/icon2.png"/>
 									</div>
@@ -201,10 +201,10 @@ render() {
 									<div className="view-more">
 										<a className="frame1" href="#">VIEW MORE</a>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div className="col-sm-4">
-								<div className="frame">
+								<a href="what-we-do/devops-and-testing" className="frame">
 									<div className="group">
 										<img src="images/icon3.png"/>
 									</div>
@@ -217,7 +217,7 @@ render() {
 									<div className="view-more">
 										<a className="frame1" href="#">VIEW MORE</a>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -264,7 +264,7 @@ render() {
 								<h1>WHAT WE CAN DO FOR YOU</h1>
 							</div>
 							<div className="col-sm-6 col-md-4 remove ">
-								<div className="Web-Development-heading">
+								<a href="/service/website-development" className="Web-Development-heading">
 									<div className="Web-Development">
 										<span><img src="images/webdev.png"/></span>
 										<span>Web Development</span>
@@ -276,10 +276,10 @@ render() {
 										The team understands the demands of the project 
 										may it be minor or major.</p>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div className="col-sm-6 col-md-4 remove">
-								<div className="Web-Development-heading">
+								<a href="/service/restfull-apis" className="Web-Development-heading">
 									<div className="Web-Development">
 										<span><img src="images/resful_api.png"/></span>
 										<span>Restful APIs</span>
@@ -287,10 +287,10 @@ render() {
 									<div className="Our-developers-build-not">
 										<p>We offer API integration and development services to suit the web and mobile application development requirements of the clients.</p>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div className="col-sm-6 col-md-4 remove">
-								<div className="Web-Development-heading">
+								<a href="/service/reactive-applications" className="Web-Development-heading">
 									<div className="Web-Development">
 										<span><img src="images/React.png"/></span>
 										<span>Reactive Applications</span>
@@ -298,10 +298,10 @@ render() {
 									<div className="Our-developers-build-not">
 										<p>We offer API integration and development services to suit the web and mobile application development requirements of the clients.</p>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div className="col-sm-6 col-md-4 remove">
-								<div className="Web-Development-heading">
+								<a href="/service/full-mean-stack-development" className="Web-Development-heading">
 									<div className="Web-Development">
 										<span><img src="images/Mean.png"/></span>
 										<span>Full/Mean stack development</span>
@@ -309,10 +309,10 @@ render() {
 									<div className="Our-developers-build-not">
 										<p>We are working exceptionally well for integrating advanced online designing technologies like Angular JS/NodeJS/ExpressJS/REACT JS. We are well-versed with administrating databases like MongoDB/Cassandra/</p>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div className="col-sm-6 col-md-4 remove">
-								<div className="Web-Development-heading">
+								<a href="/service/third-party-integrations" className="Web-Development-heading">
 									<div className="Web-Development">
 										<span><img src="images/Third_party.png"/></span>
 										<span>Third Party Integrations</span>
@@ -320,10 +320,10 @@ render() {
 									<div className="Our-developers-build-not">
 										<p>We offer seamless and tricky third party integrations – Twitter and Coveritlive. Our Product Managers are constantly on the look-out for new apps, technical advances and trends – judging their suitability for inclusion into Sunshine.</p>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div className="col-sm-6 col-md-4 remove">
-								<div className="Web-Development-heading">
+								<a href="/service/machine-learning" className="Web-Development-heading">
 									<div className="Web-Development">
 										<span><img src="images/mACHINE.png"/></span>
 										<span>Machine Learning</span>
@@ -331,13 +331,13 @@ render() {
 									<div className="Our-developers-build-not">
 										<p>Our Data Scientists take the time to train the data into information, and information into insight. Our robust data analysis can increase your business productivity by turning raw data to better inform business decisions.</p>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
 				</section>
-		
-				<section>
+
+		<section>
 					<div className="container">
 						<div className="row">
 							<div className="OUR-WORK">
@@ -433,210 +433,161 @@ render() {
 					</div>
 				</section>
 						
-				<section className="testimonials-section">
-					<div className="container">
-						<div className="row">
-							<div className="what-our-client">
-								<h1>WHAT OUR CLIENTS SAY</h1>
-							</div>
-							<div className="slider-images">
-								<img src="images/quote_icon.png"/>
-							</div>
-							
-							<div className="my-slider">
-				    			<div className="item">
-				    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-				    				<ul>
-					    				<li>
-					    					<span className="img-slide">
-					    						<img src="images/67.jpg"/>
-					    					</span>
-					    				</li>
-					    				<li>
-					    					<h3>Tom Bossworth</h3>
-					    					<p>Art Director, <span>Design Company</span></p>
-					    				</li>
-					    			</ul>
-					    		</div>
-					    		<div className="item">
-				    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-				    				<ul>
-					    				<li>
-					    					<span className="img-slide">
-					    						<img src="images/67.jpg"/>
-					    					</span>
-					    				</li>
-					    				<li>
-					    					<h3>Tom Bossworth</h3>
-					    					<p>Art Director, <span>Design Company</span></p>
-					    				</li>
-					    			</ul>
-					    		</div>
-					    		<div className="item">
-				    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-				    				<ul>
-					    				<li>
-					    					<span className="img-slide">
-					    						<img src="images/67.jpg"/>
-					    					</span>
-					    				</li>
-					    				<li>
-					    					<h3>Tom Bossworth</h3>
-					    					<p>Art Director, <span>Design Company</span></p>
-					    				</li>
-					    			</ul>
-					    		</div>
-					    		<div className="item">
-				    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-				    				<ul>
-					    				<li>
-					    					<span className="img-slide">
-					    						<img src="images/67.jpg"/>
-					    					</span>
-					    				</li>
-					    				<li>
-					    					<h3>Tom Bossworth</h3>
-					    					<p>Art Director, <span>Design Company</span></p>
-					    				</li>
-					    			</ul>
-					    		</div>
-					    		<div className="item">
-				    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-				    				<ul>
-					    				<li>
-					    					<span className="img-slide">
-					    						<img src="images/67.jpg"/>
-					    					</span>
-					    				</li>
-					    				<li>
-					    					<h3>Tom Bossworth</h3>
-					    					<p>Art Director, <span>Design Company</span></p>
-					    				</li>
-					    			</ul>
-					    		</div>
-					  		</div>
-						</div>
-					</div>
-				</section>
 
-				<div className="technologies">
-			    	<div className="container-fluid">
-				    	<div className="row">
-				    		<div className="simply-scroll simply-scroll-container">
-								<div className="simply-scroll-btn simply-scroll-btn-pause"></div>
-								<div className="simply-scroll-clip">
-								{/*
-									<ul id="scroller"  className="simply-scroll-list">
-					 	    			<li><img src="images/wordpress.png" alt="Wordpress"/></li>
-					        			<li><img src="images/php.png" alt="PHP"/></li>
-					        			<li><img src="images/angular.png" alt="Angular"/></li>
-					        			<li><img src="images/carephp.png" alt="Carephp"/></li>
-					        			<li><img src="images/codelgniter.png" alt="Codelgniter"/></li>
-					        			<li><img src="images/node.png" alt="Node"/></li>
-					            		<li><img src="images/shopify.png" alt="Shopify"/></li>
-					            		<li><img src="images/react-logo.png" alt="React"/></li>
-					            		<li><img src="images/node.png" alt="Node"/></li>
-					            		<li><img src="images/shopify.png" alt="Shopify"/></li>
-					            		<li><img src="images/react-logo.png" alt="React"/></li>
-					            	</ul>
-					            */}
-				            	</div>
-				        	</div> 
-						</div>
-			    	</div>
-			    </div>
 
-				<section>
-					<div className="container text-center">
-						<div className="row">
-							<div className="lets-get">
-								<h4>Let’s Get Started</h4>
-								<p>We need to learn more about your idea so we can marry it with our technical knowledge and help you come up with a winning product strategy. Push the button to let us know the 
-								details, and our mobile experts will get back to you soon.</p>
-								<a href="#" className="get-a-free">get a free quote</a>
+	<section className="techno">
+ 		<div className="container">
+ 			<div className="Technologies">
+ 				<span>Technologies</span>
+ 				<div className="techo-img">
+ 					<img src="images/img-tech.png"/>
+ 				</div>
+ 				
+
+ 			</div>
+ 		</div>
+ 	</section>
+    
+{/*
+	<section className="testimonials-section">
+		<div className="container">
+			<div className="row">
+				<div className="what-our-client">
+					<h2 className="heading">WHAT OUR CLIENTS SAY</h2>
+				</div>
+				<div className="slider-images">
+					<img src="images/quote_icon.png"/>
+				</div>
+				<div className="owl-carousel tsmnl-carousel owl-theme">
+						<div className="item">
+							<div className="carousel-item">
+								<span className="tson-img"><img src="images/67.jpg" alt=""/></span>
+								<h5>Marily Franco<span>Art Director, Design Company</span></h5>
+								<p className="comment">
+									Spineor’s designers are a very professional one who want as many details as possible in order to deliver the right product. I found my experiences with Spineor to be fun rather than work. They are a brilliant graphic designers and their creativity goes well beyond any bounds I have ever seen.
+								</p>
+							</div>
+						</div>
+						<div className="item">
+							<div className="carousel-item">
+								<span className="tson-img"><img src="images/67.jpg" alt=""/></span>
+								<h5>Marily Franco<span>Art Director, Design Company</span></h5>
+								<p className="comment">
+									Spineor’s designers are a very professional one who want as many details as possible in order to deliver the right product. I found my experiences with Spineor to be fun rather than work. They are a brilliant graphic designers and their creativity goes well beyond any bounds I have ever seen.
+								</p>
+							</div>
+						</div>
+						<div className="item">
+							<div className="carousel-item">
+								<span className="tson-img"><img src="images/67.jpg" alt=""/></span>
+								<h5>Marily Franco<span>Art Director, Design Company</span></h5>
+								<p className="comment">
+									Spineor’s designers are a very professional one who want as many details as possible in order to deliver the right product. I found my experiences with Spineor to be fun rather than work. They are a brilliant graphic designers and their creativity goes well beyond any bounds I have ever seen.
+								</p>
+							</div>
+						</div>
+						<div className="item">
+							<div className="carousel-item">
+								<span className="tson-img"><img src="images/67.jpg" alt=""/></span>
+								<h5>Marily Franco<span>Art Director, Design Company</span></h5>
+								<p className="comment">
+									Spineor’s designers are a very professional one who want as many details as possible in order to deliver the right product. I found my experiences with Spineor to be fun rather than work. They are a brilliant graphic designers and their creativity goes well beyond any bounds I have ever seen.
+								</p>
 							</div>
 						</div>
 					</div>
-				</section>	
+			</div>
+		</div>
+	</section>
+*/}
+	
 
-				<section>
-					<div className="container">
-						<div className="get-in-section">
-								<div className="get-in-touch">
-									<h1>GET IN TOUCH</h1>
-								</div>
-								<div className="col-sm-6">
-									<form action="">
-										<div className="form-group">
-				      						
-				      						<input type="text" className="form-control" id="name" placeholder="Name" name="name"/>
-				    					</div>
-				    					<div className="form-group">
-				      						
-				      						<input type="email" className="form-control" id="email" placeholder="Enter email" name="email"/>
-				    					</div>
-				    					<div className="form-group">
-				     		 				
-				      						<input type="text" className="form-control" id="phone" placeholder="Phone" name="phone"/>
-				    					</div>
-				    					<div className="form-group">
-				      						
-				      						<textarea className="form-control" rows="5" id="comment">Message</textarea>
-				    					</div>
-				    					<button type="submit" className="btn submit-btn">SEnd message</button>
-				    				</form>
-								</div>
-								<div className="col-sm-6">
-									<div className="map">
-									{/*
-										<GoogleMapReact
-								          bootstrapURLKeys={{key:'AIzaSyCHk9ydWP42_dQOGTLbBRKy336La-RXNaY'}}
-								          defaultCenter={this.props.center}
-								          defaultZoom={this.props.zoom}
-								        >
-								          
-								        </GoogleMapReact>
-								    */}
+	<section className="we-need-to">
+		<div className="container text-center">
+			<div className="row">
+				<div className="lets-get">
+					<h4>Let’s Get Started</h4>
+					<p>We need to learn more about your idea so we can marry it with our technical knowledge and help you come up with a winning product strategy. Push the button to let us know the 
+					details, and our mobile experts will get back to you soon.</p>
+					<a href="#" className="get-a-free">get a quote</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<section>
+		<div className="container">
+			<div className="get-in-section">
+					<div className="get-in-touch">
+						<h2 className="headingh2">GET IN TOUCH</h2>
+					</div>
+					<div className="col-sm-6">
+						<div className="we-want">
+							<span>We want to hear from you!</span>
+						</div>
+						
+						<form>
+							<div className="form-group">
+	      						
+	      						<input type="text" className="form-control" id="name" placeholder="Name" name="name"/>
+	    					</div>
+	    					<div className="form-group">
+	      						
+	      						<input type="email" className="form-control" id="email" placeholder="Enter email" name="email"/>
+	    					</div>
+	    					<div className="form-group">
+	     		 				
+	      						<input type="text" className="form-control" id="phone" placeholder="Phone" name="phone"/>
+	    					</div>
+	    					<div className="form-group">
+	      						
+	      						<textarea className="form-control" rows="5" id="comment">Message</textarea>
+	    					</div>
+	    					<button type="submit" className="btn submit-btn">SEnd message</button>
+	    				</form>
+					</div>
+					<div className="col-sm-6">
+						<div className="contact-info">
+							<span>Contact Information</span>
+							<div className="contact-info-list">
+								<ul>
+									<li>
+										<div className="location">
+										<span id="in-img"><img src="images/Contact_big_icon1_blue.png"/></span>
+										<p><span>Location:</span>
+										E-261, IT TOWER, AirportRoad, Mohali (PB)</p>
 									</div>
-								</div>
-								<div className="inner-wrapper">
-									<div className="inner-row">
-										<ul>
-											<li>
-												<div className="location">
-													<span id="in-img"><img src="images/Contact_big_icon1_blue.png"/></span>
-													<p><span>Location:</span>
-													E-261, IT TOWER, Airport<br/>Road, Mohali (PB)</p>
-												</div>
-											</li>
-											<li>
-												<div className="location">
-													<span id="in-img"><img src="images/Contact_big_icon2_blue.png"/></span>
-													<p><span>Email:</span>info@spineor.com</p>
-													
-												</div>
-											</li>
-											<li>
-												<div className="location">
-													<span id="in-img"><img src="images/Contact_big_icon3_blue.png"/></span>
-													<p><span>Phone:</span>0172-5058146<br/>91-99150-21146</p>
-													
-												</div>
-											</li>
-											<li>
-												<div className="location">
-													<span id="in-img"><img src="images/Contact_big_icon4_blue.png"/></span>
-													<p><span>Skype:</span>
-													Spineor-web-Services</p>
-												</div>
-											</li>
-										</ul>
+									</li>
+									<li>
+										<div className="location">
+										<span id="in-img"><img src="images/Contact_big_icon3_blue.png"/></span>
+										<p><span>Phone:</span>
+										0172-5058146 ,       91-99150-21146</p>
 									</div>
-								</div>
+									</li>
+									<li>
+										<div className="location">
+										<span id="in-img"><img src="images/Contact_big_icon2_blue.png"/></span>
+										<p><span>Email:</span>
+										info@spineor.com</p>
+									</div>
+									</li>
+									<li>
+										<div className="location">
+										<span id="in-img"><img src="images/Contact_big_icon4_blue.png"/></span>
+										<p><span>Skype:</span>
+										Spineor-web-Services</p>
+									</div>
+									</li>
+									
+								</ul>
+							</div>
 						</div>
 					</div>
-				</section>
-			
+			</div>
+		</div>
+	</section>
+				
 
 				<SEO url="home" />
 
